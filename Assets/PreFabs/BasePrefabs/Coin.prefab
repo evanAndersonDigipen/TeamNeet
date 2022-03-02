@@ -133,7 +133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91b50c96ac644af43b2e36545e4f0a45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points: 10
+  points: 1
   PickUpNoise: {fileID: 8300000, guid: 2c743659c8523314f8246fe0fe77ee78, type: 3}
   SpawnOnPickUp: {fileID: 8087416687177050560, guid: 3751a5ca735da844f8c28cf29c2037d2,
     type: 3}
