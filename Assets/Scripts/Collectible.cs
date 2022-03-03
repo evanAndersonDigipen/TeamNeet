@@ -20,6 +20,9 @@ public class Collectible : MonoBehaviour
 
     // Total time before food rots;
     public float lifetime = 12f;
+    
+    // Type of food
+    public FoodType type = FoodType.None;
 
     // Start is called before the first frame update
     void Start()
@@ -64,6 +67,7 @@ public class Collectible : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Player"))
         {
+            GameObject.FindObjectOfType<FoodManager>().AddFood(type);
             GameManager.score += points;
             AudioSource PAud = collision.gameObject.GetComponent<AudioSource>();
             if(PAud != null)
