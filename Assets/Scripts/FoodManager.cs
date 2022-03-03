@@ -10,11 +10,14 @@ public class FoodManager : MonoBehaviour
     // Foods required to spawn in the map
     public FoodType[] levelFoodTypes;
 
+    public GameObject[] levelFoodPrefabs;
+
     // food counter to keep track of number of each type
     private FoodTypeCount[] foods;
 
     private void Start()
     {
+        // Setup food counters
         int count = levelFoodTypes.Length;
         foods = new FoodTypeCount[count];
         for(int i = 0; i < count; i++)
@@ -22,6 +25,17 @@ public class FoodManager : MonoBehaviour
             foods[i].type = levelFoodTypes[i];
         }
         // SPAWN FOODS
+        foreach(GameObject go in levelFoodPrefabs)
+        {
+            GameObject.Instantiate(go, GetRespawnPoint(), Quaternion.identity);
+        }
+    }
+
+    private Vector3 GetRespawnPoint()
+    {
+        Transform t = GameObject.Find("Respawn Points Parent").transform;
+        int selectedChild = Random.Range(0, t.childCount);
+        return t.GetChild(selectedChild).position;
     }
 
     public void AddFood(FoodType type)
@@ -58,7 +72,6 @@ public class FoodManager : MonoBehaviour
                 }
                 if (!IsEnoughFood(recipes[recipeNum].input[i], foods[j]))
                 {
-                    Debug.Log("Not Enough of: " + System.Enum.GetName(typeof(FoodType), foods[j].type));
                     return false;
                 }
             }
