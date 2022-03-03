@@ -7,6 +7,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 [RequireComponent(typeof(Rigidbody2D))]
@@ -58,15 +59,15 @@ public class PlayerController : MonoBehaviour
 
     //animation
     private Animator myAnim;
-    
 
+    public int lives = 2;
     // Start is called before the first frame update
     void Start()
     {
         myRb = GetComponent<Rigidbody2D>();
         myAud = GetComponent<AudioSource>();
         myAnim = GetComponent<Animator>();
-
+        lives = 2;
         jumps = extraJumps;
 
         RespawnPoint = transform.position;
@@ -208,8 +209,13 @@ public class PlayerController : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Enemy"))
         {
-            myRb.velocity = Vector2.zero;
-            transform.position = RespawnPoint;
+            lives--;
+            Vector3 towards = (-transform.position + collision.transform.position).normalized;
+            myRb.velocity = -towards * 20;
+        }
+        if(lives <= 0)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 }
