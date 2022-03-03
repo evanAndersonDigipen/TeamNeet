@@ -47,12 +47,13 @@ public class MusicPlayer : MonoBehaviour
 
         //play first track
         FindRightTrack();
+
+        SceneManager.sceneLoaded += OnLevelLoad;
         
     }
 
-    private void OnLevelWasLoaded(int level)
+    private void OnLevelLoad(Scene scene, LoadSceneMode mode)
     {
-        
         FindRightTrack();
     }
 
