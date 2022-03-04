@@ -15,7 +15,9 @@ public class FoodManagerUI : MonoBehaviour
         foreach (Recipe r in FoodManager.recipes)
         {
             GameObject t = Instantiate(place_text, transform);
-            t.name = r.foodName;
+            t.name = r.recipeName;
+
+            
         }
     }
 
