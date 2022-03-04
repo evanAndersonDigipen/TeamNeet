@@ -20,7 +20,8 @@ public class FoodManagerUI : MonoBehaviour
         for (int j = 0; j < FoodManager.recipes.Length; j++)
         {
             Recipe r = FoodManager.recipes[j];
-            GameObject t = Instantiate(place_text, transform.position + new Vector3(0, j*-40), Quaternion.identity, transform);
+            GameObject t = Instantiate(place_text, transform);
+            t.transform.localPosition += new Vector3(0, j * -40);
             t.name = r.recipeName;
 
             TMP_Text tmp = t.GetComponent<TMP_Text>();
