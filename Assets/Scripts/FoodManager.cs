@@ -29,6 +29,33 @@ public class FoodManager : MonoBehaviour
         {
             GameObject.Instantiate(go, GetRespawnPoint(), Quaternion.identity);
         }
+
+        // Setup counts to be offset - Evan
+        int offset = 0;
+        FoodTypeCount[][] inputs = new FoodTypeCount[recipes.Length][];
+        for(int i = 0; i < recipes.Length; i++)
+        {
+            inputs[i] = recipes[i].input;
+        }
+        
+        foreach(FoodType f in levelFoodTypes)
+        {
+            for (int i = 0; i < inputs.Length; i++)
+            {
+                for (int j = 0; j < inputs[i].Length; j++)
+                {
+                    if(inputs[i][j].type == f)
+                    {
+                        int old = inputs[i][j].count;
+                        inputs[i][j].count += offset;
+                        offset += old;
+                    }
+                }
+            }
+            offset = 0;
+        }     
+            
+        
     }
 
     private Vector3 GetRespawnPoint()

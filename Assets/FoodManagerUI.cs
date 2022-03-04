@@ -43,18 +43,26 @@ public class FoodManagerUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        foreach(Recipe r in FoodManager.recipes)
+        for(int c = 0; c < FoodManager.recipes.Length; c++)
         {
+            Recipe r = FoodManager.recipes[c];
             for(int i = 0; i < r.input.Length; i++)
             {
                 for(int j = 0; j < FoodManager.foods.Length; j++)
                 {
                     if (FoodManager.IsEnoughFood(r.input[i], FoodManager.foods[j]) && r.input[i].type == FoodManager.foods[j].type)
                     {
-                        GameObject g = transform.GetChild(0).GetChild(i).gameObject;
+                        
+                        GameObject g = transform.GetChild(c).GetChild(i).gameObject;
+                        //GameObject parent = g.transform.parent.gameObject;
                         g.GetComponent<Image>().color = new Color(.5f, .5f, .5f);
-                        GameObject check = Instantiate(ingredient, g.transform.position, Quaternion.identity, g.transform);
-                        check.GetComponent<Image>().sprite = checkmark;
+                        if(g.transform.childCount < 1)
+                        {
+                            GameObject check = Instantiate(ingredient, g.transform.position, Quaternion.identity, g.transform);
+                            //parent = g.transform.parent.gameObject;
+                            check.GetComponent<Image>().sprite = checkmark;
+                        }
+                        
                     }
                 }
                 

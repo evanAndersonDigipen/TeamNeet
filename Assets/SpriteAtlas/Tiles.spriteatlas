@@ -43,12 +43,13 @@ SpriteAtlas:
     secondaryTextureSettings: {}
     variantMultiplier: 1
     packables:
-    - {fileID: 102900000, guid: 015970736cfa36e4c88054972bb3d2ba, type: 3}
+    - {fileID: 2800000, guid: f99a3879764308a4d92d87d841829522, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
+<<<<<<< Updated upstream
   - {fileID: 21300000, guid: da904d10d38b12946a8c74959b54b1da, type: 3}
   - {fileID: 21300000, guid: bc774e620f1523643be1e2531e6fb478, type: 3}
   - {fileID: 21300000, guid: 9e9f02e31fcbdcc4eb84d9a8da3ca9f7, type: 3}
@@ -67,6 +68,8 @@ SpriteAtlas:
   - {fileID: -3347984106645726015, guid: 9e5bac4777e59db4c80a998172c53472, type: 3}
   - {fileID: -6386380331874166012, guid: 9e5bac4777e59db4c80a998172c53472, type: 3}
   - {fileID: 4055577607036525942, guid: 9e5bac4777e59db4c80a998172c53472, type: 3}
+=======
+>>>>>>> Stashed changes
   - {fileID: 7562716900497062, guid: f99a3879764308a4d92d87d841829522, type: 3}
   - {fileID: -7154765599751142846, guid: f99a3879764308a4d92d87d841829522, type: 3}
   - {fileID: 2984065513281883999, guid: f99a3879764308a4d92d87d841829522, type: 3}
@@ -160,6 +163,7 @@ SpriteAtlas:
   - {fileID: -7336076203705889676, guid: f99a3879764308a4d92d87d841829522, type: 3}
   - {fileID: -4344611882063969491, guid: f99a3879764308a4d92d87d841829522, type: 3}
   - {fileID: -5241486731584646207, guid: f99a3879764308a4d92d87d841829522, type: 3}
+<<<<<<< Updated upstream
   - {fileID: 21300000, guid: 80446f1b22caa9a45805239f9d9696d4, type: 3}
   - {fileID: 21300000, guid: 214e3cdc632dc254aa8e86d9d6ae36f9, type: 3}
   - {fileID: 21300000, guid: cdd44a2dc9245b84dbc0e40fc0537e66, type: 3}
@@ -293,6 +297,9 @@ SpriteAtlas:
   - FlyingSlimeIdle_0
   - FlyingSlimeIdle_3
   - FlyingSlimeIdle_2
+=======
+  m_PackedSpriteNamesToIndex:
+>>>>>>> Stashed changes
   - cavesofgallet_tiles_0
   - cavesofgallet_tiles_1
   - cavesofgallet_tiles_2
@@ -386,6 +393,7 @@ SpriteAtlas:
   - cavesofgallet_tiles_72
   - cavesofgallet_tiles_8
   - cavesofgallet_tiles_9
+<<<<<<< Updated upstream
   - lemon
   - butter
   - onion
@@ -500,6 +508,8 @@ SpriteAtlas:
   - tileset_94
   - Square
   - tomato
+=======
+>>>>>>> Stashed changes
   m_RenderDataMap: {}
   m_Tag: Tiles
   m_IsVariant: 0

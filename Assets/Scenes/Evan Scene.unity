@@ -345,8 +345,21 @@ MonoBehaviour:
       count: 1
     recipeName: Salsa
     completed: 0
+  - input:
+    - type: 2
+      count: 1
+    recipeName: Pepper
+    completed: 0
+  - input:
+    - type: 0
+      count: 1
+    - type: 1
+      count: 1
+    recipeName: Onion
+    completed: 0
   levelFoodTypes: 020000000100000000000000
   levelFoodPrefabs: []
+  foods: []
 --- !u!4 &745943698
 Transform:
   m_ObjectHideFlags: 0
@@ -418,6 +431,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 77b950efefd7e514aad9db3c7bb18a67, type: 3}
   - {fileID: 21300000, guid: cdd44a2dc9245b84dbc0e40fc0537e66, type: 3}
   - {fileID: 21300000, guid: da904d10d38b12946a8c74959b54b1da, type: 3}
+  checkmark: {fileID: 21300000, guid: 2428b92a0f0f0de479d7f22f111db3ed, type: 3}
 --- !u!1 &2008171674
 GameObject:
   m_ObjectHideFlags: 0
