@@ -20,9 +20,9 @@ public class Collectible : MonoBehaviour
 
     // Total time before food rots;
     public float lifetime = 12f;
-    
+
     // Type of food
-    public FoodType type = FoodType.None;
+    public FoodType type;
 
     // Start is called before the first frame update
     void Start()

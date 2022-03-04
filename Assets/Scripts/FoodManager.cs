@@ -118,7 +118,6 @@ public struct FoodTypeCount
 
 public enum FoodType
 {
-    None,
     Onion,
     Tomato,
     Pepper
