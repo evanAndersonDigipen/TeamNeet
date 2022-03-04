@@ -50,6 +50,8 @@ SpriteAtlas:
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: da904d10d38b12946a8c74959b54b1da, type: 3}
+  - {fileID: 21300000, guid: 30e25324b5c1b9e458b30d86fcedb1d6, type: 3}
+  - {fileID: 21300000, guid: f8b19534a807fc245ad8a53b1c3176b7, type: 3}
   - {fileID: 4413142109597815103, guid: 29173af6ad4f8f34cae2f2ad028ec303, type: 3}
   - {fileID: -3674992999376901249, guid: 29173af6ad4f8f34cae2f2ad028ec303, type: 3}
   - {fileID: 4227826887867029099, guid: 29173af6ad4f8f34cae2f2ad028ec303, type: 3}
@@ -156,6 +158,7 @@ SpriteAtlas:
   - {fileID: -7336076203705889676, guid: f99a3879764308a4d92d87d841829522, type: 3}
   - {fileID: -4344611882063969491, guid: f99a3879764308a4d92d87d841829522, type: 3}
   - {fileID: -5241486731584646207, guid: f99a3879764308a4d92d87d841829522, type: 3}
+  - {fileID: 21300000, guid: 80446f1b22caa9a45805239f9d9696d4, type: 3}
   - {fileID: 21300000, guid: cdd44a2dc9245b84dbc0e40fc0537e66, type: 3}
   - {fileID: 1671283345461455480, guid: 950f927dbc9d7d146bfeab77e560f475, type: 3}
   - {fileID: -3638366375080524030, guid: 950f927dbc9d7d146bfeab77e560f475, type: 3}
@@ -270,6 +273,8 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 77b950efefd7e514aad9db3c7bb18a67, type: 3}
   m_PackedSpriteNamesToIndex:
   - jalapeno
+  - banana
+  - Radish
   - FlyingSlimeAttack_8
   - FlyingSlimeAttack_7
   - FlyingSlimeAttack_6
@@ -376,6 +381,7 @@ SpriteAtlas:
   - cavesofgallet_tiles_72
   - cavesofgallet_tiles_8
   - cavesofgallet_tiles_9
+  - lemon
   - onion
   - rotating_coin_0
   - rotating_coin_1
