@@ -67,8 +67,7 @@ public class Collectible : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Player"))
         {
-            GameObject.FindObjectOfType<FoodManager>().AddFood(type);
-            GameManager.score += points;
+            FindObjectOfType<FoodManager>().AddFood(type);
             AudioSource PAud = collision.gameObject.GetComponent<AudioSource>();
             if(PAud != null)
             {

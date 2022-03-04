@@ -17,9 +17,4 @@ public class StartButton : MonoBehaviour
     {
         SceneManager.LoadScene(LevelToLoad);
     }
-
-    public void ResetData()
-    {
-        GameManager.score = 0;
-    }
 }

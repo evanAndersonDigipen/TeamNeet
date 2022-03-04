@@ -54,10 +54,26 @@ public class FoodManager : MonoBehaviour
                 if(IsRecipeDone(i))
                 {
                     recipes[i].completed = true;
-                    Debug.Log("Recipe Complete: " + recipes[i].foodName);
+                    Debug.Log("Recipe Complete: " + recipes[i].recipeName);
+                    if(CheckAllDone())
+                    {
+                        GetComponent<Transition>().ChangeLevel();
+                    }
                 }
             }
         }
+    }
+
+    private bool CheckAllDone()
+    {
+        foreach(Recipe r in recipes)
+        {
+            if(!r.completed)
+            {
+                return false;
+            }
+        }
+        return true;
     }
 
     private bool IsRecipeDone(int recipeNum)
@@ -89,7 +105,7 @@ public class FoodManager : MonoBehaviour
 public struct Recipe
 {
     public FoodTypeCount[] input;
-    public string foodName;
+    public string recipeName;
     public bool completed;
 }
 
