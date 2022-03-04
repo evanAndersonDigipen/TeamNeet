@@ -60,14 +60,13 @@ public class PlayerController : MonoBehaviour
     //animation
     private Animator myAnim;
 
-    public int lives = 2;
+    public int lives = 5;
     // Start is called before the first frame update
     void Start()
     {
         myRb = GetComponent<Rigidbody2D>();
         myAud = GetComponent<AudioSource>();
         myAnim = GetComponent<Animator>();
-        lives = 2;
         jumps = extraJumps;
 
         RespawnPoint = transform.position;

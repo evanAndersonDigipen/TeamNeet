@@ -20,12 +20,13 @@ public class PatrolEnemy : MonoBehaviour
     public float groundRayDist = 2f;
     public float wallRayDist = 0.2f;
 
-    public LayerMask enemyLayer;
+    LayerMask noCollideMask;
 
     // Start is called before the first frame update
     void Start()
     {
         myRB = GetComponent<Rigidbody2D>();
+        noCollideMask = LayerMask.GetMask("Enemy", "Player", "Food");
     }
 
     // Update is called once per frame
@@ -45,10 +46,10 @@ public class PatrolEnemy : MonoBehaviour
 
         myRB.AddForce(moveDir * speed * Time.deltaTime);
 
-        RaycastHit2D groundInfo = Physics2D.Raycast(frontDetection.position, Vector2.down, groundRayDist, ~enemyLayer);
-        RaycastHit2D backGroundInfo = Physics2D.Raycast(backDetection.position, Vector2.down, groundRayDist, ~enemyLayer);
-        RaycastHit2D wallInfo = Physics2D.Raycast(frontDetection.position, moveDir, wallRayDist, ~enemyLayer);
-        RaycastHit2D backWallInfo = Physics2D.Raycast(backDetection.position, -moveDir, wallRayDist, ~enemyLayer);
+        RaycastHit2D groundInfo = Physics2D.Raycast(frontDetection.position, Vector2.down, groundRayDist, ~noCollideMask);
+        RaycastHit2D backGroundInfo = Physics2D.Raycast(backDetection.position, Vector2.down, groundRayDist, ~noCollideMask);
+        RaycastHit2D wallInfo = Physics2D.Raycast(frontDetection.position, moveDir, wallRayDist, ~noCollideMask);
+        RaycastHit2D backWallInfo = Physics2D.Raycast(backDetection.position, -moveDir, wallRayDist, ~noCollideMask);
         //make sure that it can keep going a direction or switch, or just stop turning if trapped on both sides
         //if there wasn't a back check it would spaz if pushed into a strange place
         if ((groundInfo.collider == false || wallInfo.collider != false) && (backGroundInfo.collider == true && backWallInfo.collider != true))

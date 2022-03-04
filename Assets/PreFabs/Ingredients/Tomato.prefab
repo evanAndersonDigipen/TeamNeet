@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 267593483377692535}
   - component: {fileID: 267593483377692533}
   - component: {fileID: 4848889058896613855}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Tomato
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,8 +100,8 @@ MonoBehaviour:
   PickUpNoise: {fileID: 8300000, guid: 2c743659c8523314f8246fe0fe77ee78, type: 3}
   SpawnOnPickUp: {fileID: 8087416687177050560, guid: 3751a5ca735da844f8c28cf29c2037d2,
     type: 3}
-  lifetime: 15
-  type: 2
+  lifetime: 8
+  type: 1
 --- !u!58 &4848889058896613855
 CircleCollider2D:
   m_ObjectHideFlags: 0

@@ -46,7 +46,7 @@ public class Collectible : MonoBehaviour
 
     private void RespawnFood()
     {
-        if(timer < -2)
+        if(timer < -1)
         {
             Vector3 point = GetRespawnPoint();
             GameObject g = Instantiate(gameObject, point, Quaternion.identity);

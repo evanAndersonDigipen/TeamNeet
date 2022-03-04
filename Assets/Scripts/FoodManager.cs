@@ -13,7 +13,7 @@ public class FoodManager : MonoBehaviour
     public GameObject[] levelFoodPrefabs;
 
     // food counter to keep track of number of each type
-    private FoodTypeCount[] foods;
+    public FoodTypeCount[] foods;
 
     private void Start()
     {
@@ -95,7 +95,7 @@ public class FoodManager : MonoBehaviour
         return true;
     }
 
-    private bool IsEnoughFood(FoodTypeCount recipeInput, FoodTypeCount currentFood)
+    public bool IsEnoughFood(FoodTypeCount recipeInput, FoodTypeCount currentFood)
     {
         return currentFood.count >= recipeInput.count;
     }
@@ -120,5 +120,8 @@ public enum FoodType
 {
     Onion,
     Tomato,
-    Pepper
+    Pepper,
+    Egg,
+    Flour,
+    Butter
 }

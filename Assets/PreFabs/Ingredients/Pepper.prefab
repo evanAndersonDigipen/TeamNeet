@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5362907962932889697}
   - component: {fileID: 2572172162219605576}
   - component: {fileID: 3710387815243943297}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Pepper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ MonoBehaviour:
   SpawnOnPickUp: {fileID: 8087416687177050560, guid: 3751a5ca735da844f8c28cf29c2037d2,
     type: 3}
   lifetime: 15
-  type: 3
+  type: 2
 --- !u!58 &3710387815243943297
 CircleCollider2D:
   m_ObjectHideFlags: 0
