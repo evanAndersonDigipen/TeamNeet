@@ -122,6 +122,12 @@ public class PlayerController : MonoBehaviour
             myRb.drag = airDrag;
             myRb.velocity = (Vector2.up * jumpForce) + new Vector2(myRb.velocity.x, 0);
             jumpPressed = true;
+            GetComponent<Animator>().Play("PlayerJump");
+        }
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            GetComponentInChildren<FireBreathing>().Blast();
         }
     }
 

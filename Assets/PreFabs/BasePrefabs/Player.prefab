@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8397047255048113364}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.3, z: 0}
+  m_LocalPosition: {x: 0, y: -0.506, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8397047256095260028}
@@ -61,7 +61,7 @@ Transform:
   m_GameObject: {fileID: 8397047256095260017}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -2, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 2}
   m_Children:
   - {fileID: 8397047255048113365}
   m_Father: {fileID: 0}
@@ -107,9 +107,9 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -3347984106645726015, guid: 9e5bac4777e59db4c80a998172c53472,
+  m_Sprite: {fileID: -3804213541939184514, guid: 26b2231e2cc220b45b434713c9486311,
     type: 3}
-  m_Color: {r: 0.5210975, g: 0.9811321, b: 0.44891423, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
@@ -127,7 +127,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8397047256095260017}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 3b1f7fd5f18900841b290e9c1be2e989, type: 2}
   m_CullingMode: 0
@@ -147,22 +147,22 @@ BoxCollider2D:
   m_GameObject: {fileID: 8397047256095260017}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 8a4a9e2428d774a4190f3646d6d43e1b, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.07, y: 0.06}
+  m_Offset: {x: -0.05455184, y: -0.072006896}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2, y: 2}
+    oldSize: {x: 1, y: 1}
     newSize: {x: 2, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
-  m_AutoTiling: 1
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.7, y: 0.7}
+  m_Size: {x: 0.70905685, y: 0.786198}
   m_EdgeRadius: 0
 --- !u!50 &8397047256095260026
 Rigidbody2D:
@@ -303,6 +303,7 @@ MonoBehaviour:
   extraJumps: 1
   jumpForce: 8
   jumpTime: 0.3
+  gravityScale: 5
   groundDrag: 10
   airDrag: 0.3
   jumpNoise: {fileID: 8300000, guid: 39e815db8f7692a44ba7653e4d249281, type: 3}
@@ -312,3 +313,4 @@ MonoBehaviour:
   ladderDist: 1
   climbSpeed: 50
   RespawnPoint: {x: 0, y: 0, z: 0}
+  lives: 3
