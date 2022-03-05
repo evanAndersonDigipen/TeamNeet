@@ -73,17 +73,6 @@ public class FoodManagerUI : MonoBehaviour
 
     Sprite spriteFromFoodType(FoodType food)
     {
-        switch (food)
-        {
-            case FoodType.Tomato:
-                return ingredients[0];
-            case FoodType.Onion:
-                return ingredients[1];
-            case FoodType.Pepper:
-                return ingredients[2];
-            default:
-                return ingredients[0];
-                
-        }
+        return ingredients[(int)food];
     }
 }
