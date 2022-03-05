@@ -436,15 +436,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe466d42c86e9504bacaa4e4e6114907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 100
-  airSpeed: 25
+  speed: 50
+  airSpeed: 10
   groundCheck: {fileID: 8397047255048113365}
   checkRadius: 0.1
   whatIsGround:
     serializedVersion: 2
     m_Bits: 1280
   extraJumps: 1
-  jumpForce: 8
+  jumpForce: 12
   jumpTime: 0.3
   gravityScale: 5
   groundDrag: 10
