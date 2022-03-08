@@ -54,7 +54,10 @@ MonoBehaviour:
   place_text: {fileID: 8595614112808102818, guid: ebf817d3f2472894a8d46a7cd01ae2fa,
     type: 3}
   ingredients:
-  - {fileID: 21300000, guid: 77b950efefd7e514aad9db3c7bb18a67, type: 3}
   - {fileID: 21300000, guid: cdd44a2dc9245b84dbc0e40fc0537e66, type: 3}
+  - {fileID: 21300000, guid: 77b950efefd7e514aad9db3c7bb18a67, type: 3}
   - {fileID: 21300000, guid: da904d10d38b12946a8c74959b54b1da, type: 3}
+  - {fileID: 21300000, guid: bc774e620f1523643be1e2531e6fb478, type: 3}
+  - {fileID: 21300000, guid: 9e9f02e31fcbdcc4eb84d9a8da3ca9f7, type: 3}
+  - {fileID: 21300000, guid: 214e3cdc632dc254aa8e86d9d6ae36f9, type: 3}
   checkmark: {fileID: 21300000, guid: 2428b92a0f0f0de479d7f22f111db3ed, type: 3}

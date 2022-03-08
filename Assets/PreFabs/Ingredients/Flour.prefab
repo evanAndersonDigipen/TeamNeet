@@ -100,7 +100,7 @@ MonoBehaviour:
   PickUpNoise: {fileID: 8300000, guid: 2c743659c8523314f8246fe0fe77ee78, type: 3}
   SpawnOnPickUp: {fileID: 8087416687177050560, guid: 3751a5ca735da844f8c28cf29c2037d2,
     type: 3}
-  lifetime: 30
+  lifetime: 600
   type: 4
 --- !u!58 &1260691570135234850
 CircleCollider2D:
