@@ -1,19 +1,16 @@
 fileFormatVersion: 2
-guid: 26b2231e2cc220b45b434713c9486311
+guid: 1569a79dc169b71408e34ec02e9e0544
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3804213541939184514
-    second: Dorgan Walking Sprite_0
+      213: 2158138686378679941
+    second: Dorgan Jumping Sprite resized_0
   - first:
-      213: -7203551692873431244
-    second: Dorgan Walking Sprite_1
+      213: -9029315095229452056
+    second: Dorgan Jumping Sprite resized_1
   - first:
-      213: 2129163794207227290
-    second: Dorgan Walking Sprite_2
-  - first:
-      213: 7929040146639410503
-    second: Dorgan Walking Sprite_3
+      213: 3207234630140892939
+    second: Dorgan Jumping Sprite resized_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -103,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Dorgan Walking Sprite_0
+      name: Dorgan Jumping Sprite resized_0
       rect:
         serializedVersion: 2
         x: 0
@@ -117,14 +114,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7cfbfe60f7b43bc0800000000000000
-      internalID: -3804213541939184514
+      spriteID: 58e11a173bf33fd10800000000000000
+      internalID: 2158138686378679941
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dorgan Walking Sprite_1
+      name: Dorgan Jumping Sprite resized_1
       rect:
         serializedVersion: 2
         x: 64
@@ -138,14 +135,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4378d11c6e7d70c90800000000000000
-      internalID: -7203551692873431244
+      spriteID: 8e0b6cf92cd61b280800000000000000
+      internalID: -9029315095229452056
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dorgan Walking Sprite_2
+      name: Dorgan Jumping Sprite resized_2
       rect:
         serializedVersion: 2
         x: 0
@@ -159,29 +156,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a9d3856a03f4c8d10800000000000000
-      internalID: 2129163794207227290
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dorgan Walking Sprite_3
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 745d046e00c990e60800000000000000
-      internalID: 7929040146639410503
+      spriteID: b0711e847e2628c20800000000000000
+      internalID: 3207234630140892939
       vertices: []
       indices: 
       edges: []
