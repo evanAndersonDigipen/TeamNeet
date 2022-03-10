@@ -45,6 +45,7 @@ public class PlayerController : MonoBehaviour
 
     private AudioSource myAud;
     public AudioClip jumpNoise;
+    public AudioClip damageNoise;
 
     //ladder things
     private bool isClimbing;
@@ -215,6 +216,7 @@ public class PlayerController : MonoBehaviour
         if(collision.gameObject.CompareTag("Enemy"))
         {
             lives--;
+            myAud.PlayOneShot(damageNoise);
             Vector3 towards = (-transform.position + collision.transform.position).normalized;
             myRb.velocity = -towards * 20;
         }

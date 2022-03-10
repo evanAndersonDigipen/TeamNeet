@@ -5,6 +5,7 @@ using UnityEngine;
 public class FireBreathing : MonoBehaviour
 {
     LayerMask enemyMask;
+    public AudioClip fireee;
 
     private void Start()
     {
@@ -13,6 +14,9 @@ public class FireBreathing : MonoBehaviour
     public void Blast()
     {
         Animator a = GetComponent<Animator>();
+        AudioSource source = GetComponent<AudioSource>();
+
+        source.PlayOneShot(fireee);
         a.Play("Fire");
     }
 

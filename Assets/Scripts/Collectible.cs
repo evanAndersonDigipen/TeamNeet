@@ -75,7 +75,8 @@ public class Collectible : MonoBehaviour
             }
             if(SpawnOnPickUp != null)
             {
-                Instantiate(SpawnOnPickUp, transform.position, transform.rotation);
+                GameObject g = Instantiate(SpawnOnPickUp, transform.position, transform.rotation);
+                g.GetComponent<ParticleSystem>().textureSheetAnimation.SetSprite(0, GetComponent<SpriteRenderer>().sprite);
             }
             Destroy(gameObject);
         }
